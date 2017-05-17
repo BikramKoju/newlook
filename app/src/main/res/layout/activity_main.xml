@@ -33,6 +33,7 @@
                     android:id="@+id/backdrop"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:foregroundGravity="center"
                     android:fitsSystemWindows="true"
                     android:scaleType="centerCrop"
                     app:layout_collapseMode="parallax" />
@@ -49,14 +50,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/backdrop_title"
-                        android:textColor="@android:color/white"
+                        android:textColor="#541313"
                         android:textSize="@dimen/backdrop_title" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/backdrop_subtitle"
-                        android:textColor="@android:color/white"
+                        android:textColor="#585353"
                         android:textSize="@dimen/backdrop_subtitle" />
 
                 </LinearLayout>

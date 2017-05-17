@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         prepareAlbums();
 
         try {
-            Glide.with(this).load(R.drawable.cover).into((ImageView) findViewById(R.id.backdrop));
+            Glide.with(this).load(R.drawable.top).into((ImageView) findViewById(R.id.backdrop));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
     private void prepareAlbums() {
         int[] covers = new int[]{
                 R.drawable.album1,
-                R.drawable.album2,
+                R.drawable.two,
                 R.drawable.album3,
                 R.drawable.album4,
                 R.drawable.album5,
@@ -103,34 +103,34 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.album10,
                 R.drawable.album11};
 
-        Album a = new Album("Maroon5", 13, covers[0]);
+        Album a = new Album("कपाल काटेको", 100, covers[0]);
         albumList.add(a);
 
-        a = new Album("Sugar Ray", 8, covers[1]);
+        a = new Album("कपाल कालो गरेको", 200, covers[1]);
         albumList.add(a);
 
-        a = new Album("Bon Jovi", 11, covers[2]);
+        a = new Album("फेसवास गरेको", 50, covers[2]);
         albumList.add(a);
 
-        a = new Album("The Corrs", 12, covers[3]);
+        a = new Album("कपाल रातो गरेको", 120, covers[3]);
         albumList.add(a);
 
-        a = new Album("The Cranberries", 14, covers[4]);
+        a = new Album("बच्चाको कपाल काटेको (१० बर्ष मुनिको )", 40, covers[4]);
         albumList.add(a);
 
-        a = new Album("Westlife", 1, covers[5]);
+        a = new Album("फेसियल गरेको", 200, covers[5]);
         albumList.add(a);
 
-        a = new Album("Black Eyed Peas", 11, covers[6]);
+        a = new Album("फचे ब्लीच गरेको", 150, covers[6]);
         albumList.add(a);
 
-        a = new Album("VivaLaVida", 14, covers[7]);
+        a = new Album("दार्ही काटेको", 30, covers[7]);
         albumList.add(a);
 
-        a = new Album("The Cardigans", 11, covers[8]);
+        a = new Album("सेम्पु गरेको", 60, covers[8]);
         albumList.add(a);
 
-        a = new Album("Pussycat Dolls", 17, covers[9]);
+        a = new Album("हेयर डराई गरेको", 25, covers[9]);
         albumList.add(a);
 
         adapter.notifyDataSetChanged();
